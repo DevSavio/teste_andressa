@@ -51,11 +51,14 @@ class _MyHomePageState extends State<MyHomePage> {
    double sizeWidth = MediaQuery.of(context).size.width;
     double sizeHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: AppBar(
-        
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-               title: Text(widget.title),
-      ),
+      appBar: AppBar(),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.symmetric(
+              horizontal: sizeWidth * 0.0115, 
+              vertical: sizeHeight * 0.0115,
+            ),
+            children:  [
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
