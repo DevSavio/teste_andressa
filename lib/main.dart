@@ -67,6 +67,41 @@ class _MyHomePageState extends State<MyHomePage> {
                     Color.fromARGB(255, 199, 19, 19), 
                     Color.fromARGB(255, 206, 56, 11),
                   ], ),
+                ), child: 
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        // UserAccountsDrawerHeader(
+                        //             accountEmail: Text("user@mail.com"),
+                        //             accountName: Text("Seu zé"),
+                        //             currentAccountPicture: CircleAvatar(
+                        //               child: Text("SZ"),
+                        //             ),
+                        //           ),
+                        Text("Andressa",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 32, 
+                          color: Colors.white),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: sizeHeight * 0.025,
+                    ),
+                    const Text("Aluna de ADS Unifanap", 
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
+                  ]
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
