@@ -59,6 +59,14 @@ class _MyHomePageState extends State<MyHomePage> {
               vertical: sizeHeight * 0.0115,
             ),
             children:  [
+              DrawerHeader(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  gradient:LinearGradient(colors:
+                  <Color>[
+                    Color.fromARGB(255, 199, 19, 19), 
+                    Color.fromARGB(255, 206, 56, 11),
+                  ], ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
