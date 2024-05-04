@@ -113,6 +113,29 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            SizedBox(
+              height: sizeHeight * 0.0725,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FloatingActionButton(
+                  onPressed: _incrementCounter,
+                  tooltip: 'Increment',
+                  backgroundColor: const Color.fromARGB(1, 112, 114, 219),
+                  child: const Icon(Icons.add),
+                ),
+                SizedBox(
+                  width: sizeWidth * 0.025,
+                ),
+                FloatingActionButton(
+                  onPressed: _decrementCounter,
+                  tooltip: 'Decrement',
+                  backgroundColor: const Color.fromARGB(1, 199, 105, 228),
+                  child: const Icon(Icons.remove),
+                ),
+              ],
+            )
           ],
         ),
       ),
