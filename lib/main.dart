@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
    double sizeWidth = MediaQuery.of(context).size.width;
     double sizeHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: Color.fromARGB(246, 241, 79, 193),
       appBar: AppBar(),
         drawer: Drawer(
           child: ListView(
