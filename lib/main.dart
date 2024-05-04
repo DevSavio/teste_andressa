@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 235, 137, 170)),
         useMaterial3: true,
@@ -48,10 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-   double sizeWidth = MediaQuery.of(context).size.width;
+    double sizeWidth = MediaQuery.of(context).size.width;
     double sizeHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Color.fromARGB(246, 241, 79, 193),
+      backgroundColor: const Color.fromARGB(246, 241, 79, 193),
       appBar: AppBar(),
         drawer: Drawer(
           child: ListView(
